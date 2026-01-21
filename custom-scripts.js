@@ -16,8 +16,14 @@ $(document).ready(function(){
                     // Eklenen node'lardan herhangi biri calendar-body-v2 class'ına sahip mi kontrol et
                     for (let node of mutation.addedNodes) {
                         if (node.nodeType === 1 && node.classList && node.classList.contains('calendar-body-v2')) {
-                            $('a[data-method="uc"] span').text('Varolan Hediye Seanslarımla Öde');
-$('a[data-method="cc"] span').text('Kredi Kartıyla Öde');
+                            $('.payment-options_v2 a[data-method="cc"] span')
+        .text('Kredi Kartı / Banka Kartı ile Öde');
+ 
+    $('.payment-options_v2 a[data-method="moneypay"] span')
+        .text('MoneyPay Cüzdan Kartı ile Öde');
+ 
+    $('.payment-options_v2 a[data-method="uc"] span')
+        .text('Hediye Seans Bakiyem ile Öde');
                             break;
                         }
                     }
@@ -778,5 +784,6 @@ $(document).ready(function () {
 }
 
 });
+
 
 
