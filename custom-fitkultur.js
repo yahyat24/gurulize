@@ -422,6 +422,8 @@ $('.item.gtm-package-item[data-package-id="18"]').append('<div class="fit-card-b
 
 $('div[data-package-id="18"] .item-content').css('background-color','#FF3599');
 
+$('.item.gtm-package-item[data-package-id="23"]').append('<div class="fit-card-botton"><ul><li class="fit-p fit-color-3 fit-bold">16 Mart Grubu</li><li class="fit-p fit-color-3">Kısa süreli denemek isteyenler için idealdir</li><li class="fit-p fit-color-3">Tek seferlik 1 aylık ödeme yapılır</li><li class="fit-p fit-color-3">Süre sonunda otomatik yenilenmez</li></ul></div>');
+
 });
 
 $(document).ready(function() {
