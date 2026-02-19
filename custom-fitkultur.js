@@ -1,21 +1,3 @@
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-47500K8E2H"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-47500K8E2H'); </script>
-
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-58GWFLFS');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58GWFLFS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<script src="/js/vendor/jquery-3.2.1.min.js?0907"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
 $(document).ready(function() {
     const urlParams = new URLSearchParams(window.location.search);
     const tagsParam = urlParams.get('tags');
@@ -83,11 +65,10 @@ Kamplarda seni canlı derslerden çok daha fazlası bekliyor.</h4> <div class="f
 }
 
 });
-</script>
 
 
 
-<script>
+
 
 function toggleKalca() {
             let cinsiyet = document.getElementById("cinsiyet").value;
@@ -273,8 +254,7 @@ $(document).on("click", "#tdeehesapla", tdeeHesapla);
         $(".copy-message").fadeIn().delay(1000).fadeOut();
     });
 });
-</script>
-<script>
+
     $(document).ready(function(){
         // Kupon Kullanımı butonuna tıklanınca popup aç
         $(".kupon-kullan").click(function(){
@@ -286,9 +266,7 @@ $(document).on("click", "#tdeehesapla", tdeeHesapla);
             $(".popup-overlay1").fadeOut(); // Popup gizlenir
         });
     });
-</script>
 
-<script>
 $(document).ready(function() {
 
 $('a.btn.more').text('Tümünü Görüntüle');
@@ -340,11 +318,6 @@ document.querySelectorAll(".footer-toggle").forEach(toggle => {
 
 
     });
-</script>
-
-
-
-<script>
 
 $(document).ready(function () {
 
@@ -450,9 +423,7 @@ $('.item.gtm-package-item[data-package-id="18"]').append('<div class="fit-card-b
 $('div[data-package-id="18"] .item-content').css('background-color','#FF3599');
 
 });
-</script>
 
-<script>
 $(document).ready(function() {
 
 let speed = 0.5; // px/frame -> hızı buradan değiştir (ör: 0.5 = yavaş, 3 = hızlı)
@@ -499,37 +470,12 @@ $('.page .container').css('max-width','1140px');
     });
 });
 
-</script>
-
-<script type="text/javascript">!function(){ var e=document.createElement("script");e.type="text/javascript",e.async=!0; var t="https://statics2.kudobuzz.com/widget-loader.min.js";e.src=t;document.getElementsByTagName("head")[0].appendChild(e); window.Kudos={ServerName: "https://statics2.kudobuzz.com/", aid:"6224bc5351a2191595de0140", hideNeptune:false, apiKey: "594a28ac7dc86ea1240e0f43", WidgetServer: "https://widget.kudobuzz.com/", apiServer:"https://api.kudobuzz.com" }}()</script>
-<script>
-$(window).on('load', function() {
-    setTimeout(function() {
-        $('head').append(`
-            <style>
-            #kudobuzz_neptune_widget .wrapper {
-            padding-top:unset !important;
-            }
-
-            .neptune-btn__wrapper  {
-            margin:unset !important;
-            }
-            </style>
-        `);
-    }, 1500);
-});
-</script>
-
-<script>
-
 $(document).ready(function() {
 
 $('.svelte-1bnisx4 .wrapper').addClass('fit-kod-none');
 });
-</script>
 
-<script type="text/javascript">
-    (function () {
+ (function () {
         var options = {
             whatsapp: "905456776882", // WhatsApp numarası
             call_to_action: "Merhaba, nasıl yardımcı olabilirim?", // Görüntülenecek yazı
@@ -540,11 +486,6 @@ $('.svelte-1bnisx4 .wrapper').addClass('fit-kod-none');
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
-</script>
-
-
-
-<script>
 
 $(document).ready(function(){
 const items = document.querySelectorAll(".accordion button");
@@ -564,34 +505,6 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 });
 
-</script>
-
-<!-- Meta Pixel Code -->
-
-
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1561998121410149');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1561998121410149&ev=PageView&noscript=1"
-/></noscript>
-
-
-<!-- End Meta Pixel Code -->
-
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-47500K8E2H"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-47500K8E2H'); </script>
-
-
-<script>
 $(document).ready(function () {
 
     $(".youtube-link").on("click", function (e) {
@@ -613,7 +526,3 @@ $(document).ready(function () {
     });
 
 });
-</script>
-
-<script type="text/javascript">     (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "v9etmh92jm"); </script>
-
