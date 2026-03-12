@@ -434,4 +434,19 @@ $(document).ready(function () {
 
 		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-text"><p class="fit-p fit-color-1">Satın almadan önce <span>Online Fitness Kampı</span> nı deneyimlemek ister misin?<br>Kayıtlı deneme dersini izleyerek, derslerin nasıl geçtiğini gör!</p></div><div class="fit-camp-box fit-bg-mor"><a href="/s/esneklik-deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div></div>');
  }
+		if (window.location.pathname === "/paketler/" &&
+        new URLSearchParams(window.location.search).get("tags") === "pilates") {
+
+		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-text"><p class="fit-p fit-color-1">Satın almadan önce <span>Online Fitness Kampı</span> nı deneyimlemek ister misin?<br>Kayıtlı deneme dersini izleyerek, derslerin nasıl geçtiğini gör!</p></div><div class="fit-camp-box fit-bg-mor"><a href="/s/pilates-deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div></div>');
+ }
+		if (window.location.pathname === "/paketler/" &&
+        new URLSearchParams(window.location.search).get("tags") === "online") {
+
+		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-text"><p class="fit-p fit-color-1">Satın almadan önce <span>Online Fitness Kampı</span> nı deneyimlemek ister misin?<br>Kayıtlı deneme dersini izleyerek, derslerin nasıl geçtiğini gör!</p></div><div class="fit-camp-box fit-bg-mor"><a href="/s/deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div></div>');
+ }
+		if (window.location.pathname === "/paketler/" &&
+        new URLSearchParams(window.location.search).get("tags") === "50yas") {
+
+		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-text"><p class="fit-p fit-color-1">Satın almadan önce <span>Online Fitness Kampı</span> nı deneyimlemek ister misin?<br>Kayıtlı deneme dersini izleyerek, derslerin nasıl geçtiğini gör!</p></div><div class="fit-camp-box fit-bg-mor"><a href="/s/60-yas-deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div></div>');
+ }
 });
