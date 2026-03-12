@@ -427,4 +427,11 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
 
+	if (window.location.pathname === "/paketler/" &&
+        new URLSearchParams(window.location.search).get("tags") === "esneklik") {
+
+		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-box fit-bg-mor"><a href="/s/esneklik-deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div>');
+ }
+});
