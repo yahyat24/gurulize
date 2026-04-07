@@ -450,3 +450,16 @@ $(document).ready(function () {
 		$('.fit-abonelik-wrapper').append('<div class="fit-camp-deneme-ders"><div class="fit-camp-content"><div class="fit-camp-price"><div class="fit-camp-text"><p class="fit-p fit-color-1">Satın almadan önce <span>60+ Sağlıklı Yaş Alma Grubunu</span> deneyimlemek ister misiniz?<br>Kayıtlı deneme dersini izleyerek, derslerin nasıl geçtiğini görün!</p></div><div class="fit-camp-box fit-bg-mor"><a href="/s/60-yas-deneme-dersi"><span class="fit-h4 fit-color-2">Ücretsiz Deneme Dersi</span></a></div></div></div></div>');
  }
 });
+
+$(document).ready(function () {
+
+if (window.location.pathname === "/blog") {
+$('.list.flex.order-flex-list')
+  .css({
+    'flex-direction': 'row-reverse',
+    'justify-content': 'flex-end'
+  })
+  .children(':first-child')
+  .hide();
+}
+});
