@@ -73,7 +73,7 @@ $('span#order-dd label ul>:nth-child(1) a').text('İsme Göre (A-Z)');
 $('span#order-dd label ul>:nth-child(3) a').text('İsme Göre (Z-A)');
    $('#login-form').prepend('<div class="yuva-form-text"><h2 class="yuva-font-h2">Üye Girişi</h2></div>');
 
-if(window.location.pathname === '/tr-TR/uzmanlar'){
+if(window.location.pathname == '/tr-TR/uzmanlar'){
 
      $("a.btn.btn-online").text("Randevu Al");
      $("a.btn.btn-busy").text("Randevu Al");
