@@ -195,7 +195,7 @@ $('.item-c').each(function () {
 
 }  
 
-if(window.location.pathname == '/signup'){
+if(window.location.pathname == '/tr-TR/signup'){
      $('.footer').appendTo('.yuva-singup-cont');
      $('.glogin-text').text('GOOGLE İLE KAYDOL')
      $('.glogin-icon').prepend('<img src="/images/202412/268_40x40.png" width="24" height="24" />');
