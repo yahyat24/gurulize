@@ -637,7 +637,7 @@ $('.page-content').append('<div class="uzm-widget-wp"><div class="uzm-widget-con
 
 $(document).ready(function() {
 
- if (window.location.pathname === "/tr-TR/uzmanlar") {
+ if (window.location.pathname == "/tr-TR/uzmanlar") {
       
    // list sınıfının içindeki 4. item-empty öğesini seç
     var $target = $(".list .item-empty").eq(3);
