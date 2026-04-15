@@ -251,7 +251,7 @@ $('label[for="name"]').css('display','none');
  $('label[for="phone"]').css('display','none');
 
 }
-if(window.location.pathname === '/tr-TR/signup'){
+if(window.location.pathname == '/tr-TR/signup'){
 
 $('#name').attr('placeholder', 'Adınız Soyadınız');
 $('#email').attr('placeholder', 'E-Posta Adresiniz');
