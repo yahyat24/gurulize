@@ -1,5 +1,5 @@
 $(document).ready(function () {
-if(window.location.pathname == '/s/pilates-deneme-dersi'){
+if(window.location.pathname == '/tr-TR/s/pilates-deneme-dersi'){
 
 if(!$('body').hasClass('loggedIn')){
 
