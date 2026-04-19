@@ -463,3 +463,23 @@ $('.list.flex.order-flex-list')
   .hide();
 }
 });
+
+$(document).ready(function () {
+    $('.info-value').each(function () {
+        var text = $(this).text().trim();
+
+        if (text === 'Ücretsiz Online Deneme Kampı') {
+
+            var newContent = `
+                <div class="extra-info" style="margin-top:8px;">
+                    Online Ücretsiz Deneme Kampı kaydınız alınmıştır.<br>
+                    <strong>Gruba katılım bağlantı linki e-posta adresinize gönderilmiştir.</strong><br>
+                    Link üzerinden katılım sağlayabilirsiniz.<br>
+                    Lütfen <strong>kayıtlı mail adresinize gelen e-postayı kontrol ederek grubumuza katılım sağlayınız.</strong>
+                </div>
+            `;
+
+            $(this).append(newContent);
+        }
+    });
+});
