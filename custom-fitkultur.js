@@ -472,9 +472,9 @@ $(document).ready(function () {
 
             var newContent = `
                 <div class="extra-info" style="margin-top:8px;">
-                    Online Ücretsiz Deneme Kampı kaydınız alınmıştır.<br>
-                    <strong>Gruba katılım bağlantı linki e-posta adresinize gönderilmiştir.</strong><br>
-                    Link üzerinden katılım sağlayabilirsiniz.<br>
+                    Online Ücretsiz Deneme Kampı kaydınız alınmıştır.<br><br>
+                    <strong>Gruba katılım bağlantı linki e-posta adresinize gönderilmiştir.</strong><br><br>
+                    Link üzerinden katılım sağlayabilirsiniz.<br><br>
                     Lütfen <strong>kayıtlı mail adresinize gelen e-postayı kontrol ederek grubumuza katılım sağlayınız.</strong>
                 </div>
             `;
