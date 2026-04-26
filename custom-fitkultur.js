@@ -208,19 +208,7 @@ $(document).on("click", "#hesaplaBtn", hesapla);
     $(document).on("click", "#bazalhesapla", calculateBMR);
 $(document).on("click", "#tdeehesapla", tdeeHesapla);
 
-      $('.header').prepend('<div class="header-massage"><p>Yeni Hedefler, Yeni Başlangıçlar! İndirim Kodu: <span class="kod-text" id="copyText">HEDEF10 <i class="far fa-copy"></i></span><span class="copy-message">Kopyalandı!</span>Koduyla %10 İndirim Senin!<span class="kupon-kullan">Kuponumu nasıl kullanırım?</span> <i class="fas fa-arrow-right"></i></p></div><div class="popup-overlay1"><div class="popup-content1"><p class="kupon-text">Üye olduktan sonra, profilinizdeki <span>"Kuponlar"</span> menüsüne girin. Kupon Kodunu ilgili alana yazıp <span>"Gönder"</span> butonuna basarak indirim kodunuzu hesabınıza ekleyebilirsiniz.</p><button class="kupon-kapat">Kapat</button></div></div>');
-
-    $("#copyText").click(function() {
-        var text = $(this).text(); // Metni al
-        var tempInput = $("<input>"); // Geçici bir input oluştur
-        $("body").append(tempInput); // Body'ye ekle
-        tempInput.val(text).select(); // Değeri belirle ve seç
-        document.execCommand("copy"); // Kopyalama işlemi yap
-        tempInput.remove(); // Geçici input'u kaldır
-        
-        // Kopyalandı mesajını göster
-        $(".copy-message").fadeIn().delay(1000).fadeOut();
-    });
+  
 });
 
     $(document).ready(function(){
