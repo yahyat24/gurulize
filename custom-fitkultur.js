@@ -487,7 +487,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     if (window.location.pathname === "/tr-TR/payment/event/uc/12") {
         $('.alert.alert-info').html(
-            'Üyeliğiniz varsa <a class="login__hover" href="/tr-TR/login">üye girişi</a> yapmanız gerekmektedir., henüz üye değilseniz <a class="login__hover" href="/tr-TR/signup">Kaydol</a> seçeneğini kullanarak kolayca yeni bir hesap oluşturabilirsiniz.'
+            'Üyeliğiniz varsa <a class="login__hover" href="/tr-TR/login">Üye girişi</a> yapmanız gerekmektedir. Henüz üye değilseniz <a class="login__hover" href="/tr-TR/signup">Kaydol</a> seçeneğini kullanarak kolayca yeni bir hesap oluşturabilirsiniz.'
         );
     }
 });
