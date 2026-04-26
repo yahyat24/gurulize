@@ -491,3 +491,20 @@ $(document).ready(function () {
         );
     }
 });
+
+$(document).ready(function() {
+
+      $('.header').prepend('<div class="header-massage"><span class="kupon-kullan">Kuponumu nasıl kullanırım?</span> <i class="fas fa-arrow-right"></i></p></div><div class="popup-overlay1"><div class="popup-content1"><p class="kupon-text">Üye olduktan sonra profilinizde yer alan <span>"Kuponlar"</span> menüsüne girin, kupon kodunuzu ilgili alana yazıp <span>"Gönder"</span> butonuna tıklayarak hesabınıza tanımlayın; ardından online ders almak istediğiniz sayfada ya da eğitmen profilinde paket satın almadan önce <span>"Kuponlar"</span>butonuna tıklayarak kupon kodunuzu uygulamanız gerekmektedir.</p><button class="kupon-kapat">Kapat</button></div></div>');
+
+    $("#copyText").click(function() {
+        var text = $(this).text(); // Metni al
+        var tempInput = $("<input>"); // Geçici bir input oluştur
+        $("body").append(tempInput); // Body'ye ekle
+        tempInput.val(text).select(); // Değeri belirle ve seç
+        document.execCommand("copy"); // Kopyalama işlemi yap
+        tempInput.remove(); // Geçici input'u kaldır
+        
+        // Kopyalandı mesajını göster
+        $(".copy-message").fadeIn().delay(1000).fadeOut();
+    });
+});
