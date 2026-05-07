@@ -757,9 +757,7 @@ $(document).ready(function() {
 
   if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
     $('.chat-toggle').css('display', 'block');
-  } else {
-    $('.chat-toggle').css('display', 'none');
-  }
+   }
 
 });
 
