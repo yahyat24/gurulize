@@ -757,7 +757,10 @@ $(document).ready(function() {
   });
 
 if (isUzmanlarPage) {
-  $('.chat-toggle, .chat-message').show();
+  $('.chat-toggle').show();
+}
+  if (isUzmanlarPage) {
+  $('.chat-message').show();
 }
   
 });
