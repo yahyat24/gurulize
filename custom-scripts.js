@@ -756,6 +756,10 @@ $(document).ready(function() {
     localStorage.setItem('msgClosedTime', Date.now());
   });
 
+if (isUzmanlarPage) {
+  $('.chat-toggle, .chat-message').show();
+}
+  
 });
 
 
