@@ -710,7 +710,7 @@ $(".yuva-signup-img").hide();
 
 $(document).ready(function() {
 
-  // SADECE BU SAYFADA ÇALIŞSIN
+  // SADECE BU SAYFADA ÇALIŞSIN (diğer tüm sayfalarda tamamen durur)
   if (window.location.pathname !== "/tr-TR/uzmanlar") {
     return;
   }
@@ -718,7 +718,7 @@ $(document).ready(function() {
   // Sayfa yüklendiğinde mesaj balonunu kontrol et
   const lastClosedTime = localStorage.getItem('msgClosedTime');
   const now = Date.now();
-  const eightHours = 8 * 60 * 60 * 1000; // 8 saat
+  const eightHours = 8 * 60 * 60 * 1000;
 
   if (lastClosedTime && (now - lastClosedTime < eightHours)) {
     $('.chat-message').hide();
@@ -727,12 +727,7 @@ $(document).ready(function() {
   }
 
   // Açma
-  $('.chat-toggle').click(function() {
-    $('.chat-overlay').fadeIn(200);
-    $('.chat-panel').addClass('open');
-  });
-
-  $('.chat-message').click(function() {
+  $('.chat-toggle, .chat-message').click(function() {
     $('.chat-overlay').fadeIn(200);
     $('.chat-panel').addClass('open');
   });
@@ -743,17 +738,11 @@ $(document).ready(function() {
     $('.chat-panel').removeClass('open');
   }
 
-  // Chat panel kapatma butonu
-  $('.chat-close').click(function() {
+  $('.chat-close, .chat-overlay').click(function() {
     closeChat();
   });
 
-  // Boş alana tıklayınca
-  $('.chat-overlay').click(function() {
-    closeChat();
-  });
-
-  // ESC tuşuna basılınca
+  // ESC tuşu
   $(document).on('keydown', function(e) {
     if (e.key === 'Escape') {
       closeChat();
@@ -768,7 +757,6 @@ $(document).ready(function() {
   });
 
 });
-
 
 
 $(document).on('DOMNodeInserted', function() {
