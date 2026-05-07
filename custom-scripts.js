@@ -761,6 +761,14 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
+
+  if (!window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
+    $("[id^='gb-widget']").hide();
+  }
+
+});
+
 $(document).on('DOMNodeInserted', function() {
   if (window.location.pathname === '/s/iletisim') {
   $('[id^="gb-widget"]').css('display', 'block');
