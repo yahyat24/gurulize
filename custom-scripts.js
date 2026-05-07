@@ -757,15 +757,8 @@ $(document).ready(function() {
 
   if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
     $('.chat-toggle').css('display', 'block');
+    $("[id^='gb-widget']").css('display','none');
    }
-
-});
-
-$(document).ready(function() {
-
-  if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
-    $("[id^='gb-widget']").css('display', 'none');
-  }
 
 });
 
