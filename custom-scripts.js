@@ -710,16 +710,19 @@ $(".yuva-signup-img").hide();
 
 $(document).ready(function() {
 
+  // SADECE BU SAYFADA ÇALIŞSIN
+  if (window.location.pathname !== "/tr-TR/uzmanlar") {
+    return;
+  }
+
   // Sayfa yüklendiğinde mesaj balonunu kontrol et
   const lastClosedTime = localStorage.getItem('msgClosedTime');
   const now = Date.now();
-  const eightHours = 8 * 60 * 60 * 1000; // 8 saat (milisaniye cinsinden)
+  const eightHours = 8 * 60 * 60 * 1000; // 8 saat
 
   if (lastClosedTime && (now - lastClosedTime < eightHours)) {
-    // 8 saat dolmadıysa mesaj balonunu gösterme
     $('.chat-message').hide();
   } else {
-    // 8 saat geçtiyse veya hiç kapatılmadıysa göster
     $('.chat-message').show();
   }
 
@@ -759,9 +762,8 @@ $(document).ready(function() {
 
   // Mesaj balonunu kapatma
   $('.msg-close').click(function(e) {
-    e.stopPropagation(); // chat-panel açılmasını engeller
+    e.stopPropagation();
     $('.chat-message').fadeOut(200);
-    // Kapatıldığı zamanı localStorage’a kaydet
     localStorage.setItem('msgClosedTime', Date.now());
   });
 
