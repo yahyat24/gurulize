@@ -753,15 +753,6 @@ $(document).ready(function() {
  
 });
 
-$(document).ready(function() {
-
-  if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
-    $('.chat-toggle').css('display', 'block');
-    $("[id^='gb-widget']").css('display','none');
-   }
-
-});
-
 $(document).on('DOMNodeInserted', function() {
   if (window.location.pathname === '/s/iletisim') {
   $('[id^="gb-widget"]').css('display', 'block');
@@ -779,4 +770,11 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function() {
 
+  if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
+    $('.chat-toggle').css('display', 'block');
+    $("[id^='gb-widget']").css('display','none');
+   }
+
+});
