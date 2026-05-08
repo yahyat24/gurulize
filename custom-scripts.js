@@ -799,6 +799,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function() {
 
+  if (window.location.pathname.includes("/tr-TR/uzmanlar")) {
+    $("[id^='gb-widget']").hide();
+}
+
   if (window.location.pathname.startsWith("/tr-TR/uzmanlar")) {
     $('.chat-toggle').css('display', 'block');
     $("[id^='gb-widget']").css('display','none');
