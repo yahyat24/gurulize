@@ -771,6 +771,11 @@ $(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.location.pathname.includes("/tr-TR/uzmanlar")) {
+        return;
+    }
+
     var options = {
         whatsapp: "905426955574",
         call_to_action: "Çevrimiçi iletişim için buradayız.",
@@ -782,7 +787,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var url = proto + "//static." + host;
 
     var s = document.createElement("script");
-    s.type = "text/javascript";
     s.async = true;
     s.src = url + "/widget-send-button/js/init.js";
 
@@ -790,8 +794,7 @@ document.addEventListener("DOMContentLoaded", function () {
         WhWidgetSendButton.init(host, proto, options);
     };
 
-    var x = document.getElementsByTagName("script")[0];
-    x.parentNode.insertBefore(s, x);
+    document.body.appendChild(s);
 });
 
 $(document).ready(function() {
